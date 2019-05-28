@@ -59,11 +59,12 @@ public class photon_lobby : MonoBehaviour
         
         // 第1引数はルーム名、第2引数はルームオプション、第3引数はロビーです。
         PhotonNetwork.CreateRoom("RoomName", roomOptions, null);
+        PhotonNetwork.playerName="macPC";
         
     }
     public void click_join(){
         flag=false;
-        PhotonNetwork.playerName = "iphone";
+        PhotonNetwork.playerName = "macPC";
         //PhotonNetwork.JoinRandomRoom();
         PhotonNetwork.JoinRoom("RoomName");
     }
